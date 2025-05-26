@@ -1,0 +1,113 @@
+class Alumno{
+    private:
+        string nombre;
+        int Matematicas,Fisica,Quimica,Promedio;
+    public:
+        Alumno();
+        ~Alumno();
+        Alumno(int,int,int);
+        void setnombre(string);
+        string getnombre();
+        void setMatematicas(int);
+        int getMatematicas();
+        void setFisica(int);
+        int getFisica();
+        void setQuimica(int);
+        int getQuimica();
+        void CalcularPromedio();
+        int getPromedio();
+
+};
+
+Alumno::Alumno(){
+}
+
+Alumno::Alumno(int,int,int){
+}
+
+//Clase nombre
+void Alumno::setnombre(string nombre){
+    this->nombre=nombre;
+}
+string Alumno::getnombre(){
+    return this->nombre;
+}
+
+//Clase mate
+
+void Alumno::setMatematicas(int Matematicas){
+    this->Matematicas=Matematicas;
+}
+int Alumno::getMatematicas(){
+    return this->Matematicas;
+}
+
+//Clase Fisica
+
+void Alumno::setFisica(int Fisica){
+    this->Fisica=Fisica;
+}
+int Alumno::getFisica(){
+    return this->Fisica;
+}
+
+// Clase Quimica
+
+void Alumno::setQuimica(int Quimica){
+    this->Quimica=Quimica;
+}
+int Alumno::getQuimica(){
+    return this->Quimica;
+}
+
+//Clase promedio
+
+void Alumno::CalcularPromedio(){
+    this->Promedio=(this->Matematicas+this->Fisica+this->Quimica)/3;
+}
+int Alumno::getPromedio(){
+    return this->Promedio;
+}
+
+//Variables globales
+    string nombre;
+    int Matematicas=0,Fisica=0, Quimica=0;
+    int opc=0;
+    Alumno Alumnos[2];
+
+int main()
+{
+
+    do{
+        cout<<"Menu"<<endl;
+        cout<<"1)Ingresar estudiantes "<<endl;
+        cout<<"2)Listar estudiantes "<<endl;
+        cout<<"3)Modificar"<<endl;
+        cout<<"5)Salir"<<endl;
+        cout<<"seleccione una opcion:"<<endl;
+        cin>>opc;
+        switch(opc){
+            case 1:{
+                Ingresar();
+            }break;
+            case 2:{
+            for(int i = 0; i < 2 ; i++){
+            cout<<"Nombre:"<<Alumnos[i].getnombre()<<endl;
+            cout<<"Calificacion Matematicas:"<<Alumnos[i].getMatematicas()<<endl;
+            cout<<"Calificacion Matematicas:"<<Alumnos[i].getFisica()<<endl;
+            cout<<"Calificacion Matematicas:"<<Alumnos[i].getQuimica()<<endl;
+            cout<<"Promedio: "<<Alumnos[i].getPromedio()<<endl;
+            }
+            case 3:{
+                // modificar();
+            }
+            }
+            }
+
+    }while(opc!=5);
+        system("pause>>cls");
+    return 0;
+}
+
+Alumno::~Alumno(){
+}

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1631046831 source:d:\trabajos estructura de datos 1\programas\practica2_insertar_posicion\main.c
+	<stdio.h>
+	<string.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1636183089 source:d:\trabajos estructura de datos 1\practica 6 poo\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string.h>
+

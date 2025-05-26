@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1636816626 source:d:\trabajos estructura de datos 1\ejemplo_archivos-texto\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string>
+
